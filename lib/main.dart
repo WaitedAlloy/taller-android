@@ -20,15 +20,15 @@ class YoutubePlayerDemoApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Youtube Player Flutter',
+      title: 'Youtube Player Flutter-edit',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.brown,
         appBarTheme: const AppBarTheme(
-          color: Colors.blueAccent,
+          color: Colors.redAccent,
           titleTextStyle: TextStyle(
-            color: Colors.white,
+            color: Colors.white10,
             fontWeight: FontWeight.w300,
-            fontSize: 20,
+            fontSize: 50,
           ),
         ),
         iconTheme: const IconThemeData(
@@ -57,7 +57,7 @@ class _MyHomePageState extends State<MyHomePage> {
   bool _isPlayerReady = false;
 
   final List<String> _ids = [
-    YoutubePlayer.convertUrlToId("https://www.youtube.com/watch?v=UUhavvMO2FQ").toString(),
+    YoutubePlayer.convertUrlToId("https://youtu.be/3Czmr5kbTVk").toString(),
   ];
 
   @override
@@ -121,7 +121,7 @@ class _MyHomePageState extends State<MyHomePage> {
               _controller.metadata.title,
               style: const TextStyle(
                 color: Colors.white,
-                fontSize: 18.0,
+                fontSize: 20.0,
               ),
               overflow: TextOverflow.ellipsis,
               maxLines: 1,
@@ -150,7 +150,7 @@ class _MyHomePageState extends State<MyHomePage> {
       builder: (context, player) => Scaffold(
         appBar: AppBar(
           title: const Text(
-            'Pedro Pedro Pedro Pedro',
+            'Freedom isnt free',
             style: TextStyle(color: Colors.white),
           ),
         ),
@@ -258,14 +258,14 @@ class _MyHomePageState extends State<MyHomePage> {
       text: TextSpan(
         text: '$title : ',
         style: const TextStyle(
-          color: Colors.blueAccent,
+          color: Color.fromARGB(255, 3, 9, 20),
           fontWeight: FontWeight.bold,
         ),
         children: [
           TextSpan(
             text: value,
             style: const TextStyle(
-              color: Colors.blueAccent,
+              color: Color.fromARGB(200, 0, 0, 0),
               fontWeight: FontWeight.w300,
             ),
           ),
